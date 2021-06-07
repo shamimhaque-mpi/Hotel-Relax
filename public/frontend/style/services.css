@@ -1,0 +1,56 @@
+/* service section start */
+.service_section {
+    background: #F2F2F2;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.service_section .row {
+    margin-right: -25px;
+    margin-left: -25px;
+}
+.service_section .row > .col,
+.service_section .row > [class*=col-] {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.service_section .service_content {
+    align-items: flex-start;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    padding: 0 15px 25px 0;
+    margin: 35px 0;
+    display: flex;
+}
+.service_section .service_content img {
+    margin: 4px 20px 0 0;
+    border-radius: 2px;
+    min-height: 65px;
+    min-width: 65px;
+    padding: 5px;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    background: #ED7F01;
+}
+.service_section .service_content figcaption {
+    width: calc(100% - 85px);
+    display: inline-block;
+}
+.service_section .service_content h5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 600;
+}
+.service_section .service_content a:hover {color: #ED7F01;}
+.service_section .service_content a {
+    transition: all .2s;
+    color: #000
+}
+.service_section .service_content p {
+    line-height: 24px;
+    font-size: 16px;
+    margin: 0;
+}
+/* service section end */

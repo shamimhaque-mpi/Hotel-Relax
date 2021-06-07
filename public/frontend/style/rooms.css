@@ -1,0 +1,67 @@
+/* rooms section start */
+.rooms_section {
+    padding: 75px 0 55px;
+    background: #fff;
+}
+.rooms_section .rooms_box {
+    transition: all .2s;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.rooms_section .rooms_gallery {
+    overflow: hidden;
+    display: block;
+    height: 220px;
+    width: 100%;
+}
+.rooms_section .rooms_box:hover .rooms_gallery img {transform: scale(1.02);}
+.rooms_section .rooms_gallery img {
+    transition: all .2s;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.rooms_section .rooms_title {
+    border: 3px solid #F5F5F5;
+    padding: 20px 20px 15px;
+    position: relative;
+    border-left: none;
+    border-top: none;
+}
+.rooms_section .rooms_box:hover .rooms_title::after {bottom: 0;}
+.rooms_section .rooms_title::after {
+    display: inline-block;
+    transition: all .2s;
+    background: #F2F2F2;
+    position: absolute;
+    bottom: -100%;
+    height: 100%;
+    content: '';
+    width: 100%;
+    left: 0;
+}
+.rooms_section .rooms_title .article {
+    position: relative;
+    z-index: 999;
+}
+.rooms_section .rooms_title a {
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all .2s;
+    margin-bottom: 10px;
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 22px;
+    color: #000;
+    width: 100%;
+}
+.rooms_section .rooms_title h5 {
+    font-weight: 500;
+    color: #515151;
+    font-size: 16px;
+}
+.rooms_section .rooms_title a:hover,
+.rooms_section .rooms_title h5 span {color: #ED7F01;}
+/* rooms section end */

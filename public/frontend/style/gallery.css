@@ -1,0 +1,75 @@
+/* gallery section start */
+.gallery_section {
+    background: #fff;
+    padding: 75px 0;
+}
+.gallery_section .row > [class*=col-],
+.gallery_section .row > .col {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.gallery_section .row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.gallery_section .gallery_content {
+    border: 4px solid #F2F2F2;
+    display: inline-block;
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    overflow: hidden;
+    border-top: none;
+    border-left: none;
+}
+.gallery_section .gallery_content > iframe,
+.gallery_section .gallery_content > img {
+    object-fit: cover;
+    height: 265px;
+    width: 100%;
+    margin: 0;
+    border: none;
+    transition: all .2s;
+}
+.gallery_section .gallery_content a {
+    background: rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    transition: all 0.2s;
+    align-items: center;
+    font-style: italic;
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.gallery_section .gallery_content:hover a {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+.gallery_section .gallery_content:hover img {transform: scale(1.1);}
+.gallery_section .gallery_content a i {transition: all 0.2s;}
+.gallery_section .gallery_content:hover i {transform: scale(2.5);}
+/* gallery section end */
+
+
+
+/* YouTubePopUp style start hear */
+.YouTubePopUp-Close {
+    background: url('../vendors/youtube_popup/images/close.png');
+    background-position: center !important;
+    background-color: #ED7F01 !important;
+    background-size: 50% 50% !important;
+	background-repeat: no-repeat;
+    z-index: 9999 !important;
+    margin-right: -15px;
+    top: 7% !important;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.YouTubePopUp-Close:hover {opacity: 1 !important;}
